@@ -25,5 +25,9 @@ submit.addEventListener('click', function (evt) {
     email: form.elements.email.value,
     message: form.elements.message.value
   });
-  localStorage.removeItem(localStorageKey);
+  
+    localStorage.removeItem(localStorageKey);
+    
+  form.elements.email.value = "";
+  form.elements.message.value = "";
 });
